@@ -39,18 +39,109 @@
         </nav>
         <address class="header-address">
           <ul class="address list">
-            <li>
+            <li class="header-tablet-address">
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="header-tablet-address">
               <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
-        </address>
+        </address>  
+        <button type="button" class="burger-btn js-open-menu">
+          <svg class="burger-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>      
+      </div>
+      <div class="mob-menu is-hidden js-menu-container">
+        <div class="mob-btn-nav">
+          <button type="button" class="mob-menu-close-btn js-close-menu">
+            <svg class="menu-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-nav-item">
+                <a class="mob-menu-link link current" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-address-soc">
+          <address class="mob-menu-address">
+            <ul class="mob-menu-list list">
+              <li class="mob-address-item">
+                <a class="mob-menu-tel-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-menu-mail-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>                
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Main-->
@@ -59,12 +150,12 @@
       <section class="hero">
         <div class="container hero-inner">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn" data-modal-open>
+          <button type="button" class="hero-btn js-open-menu" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
-      <!--Section 1-->
+      <!-- Section 1-->
       <section class="feature">
         <div class="container feature-inner">
           <h2 class="visually-hidden">Feature</h2>
@@ -112,7 +203,7 @@
                 </svg>
               </div>
               <h3 class="feature-item-title">Technologies</h3>
-              <p class="text">
+              <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -409,7 +500,7 @@
         </div>
       </section>
       <!--Section 4-->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-icon-list list">
@@ -457,10 +548,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-inner">
         <div class="footer-container-logo">
           <a href="./index.html" class="footer-logo link"
@@ -544,10 +635,11 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!--Modal window-->
+    <div class="backdrop is-hidden js-menu-container" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
+        <button type="button" class="modal-close-btn js-close-menu" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -617,11 +709,18 @@
                    <a href="" class="privacy-link">Privacy Policy</a>
                   </label>                       
           </div>
-          <button type="submit" class="modal-btn">Send    
+          <button type="submit" class="sub-btn">Send    
             </button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
