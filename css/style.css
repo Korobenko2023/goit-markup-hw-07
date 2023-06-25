@@ -68,18 +68,18 @@ img {
   /*TODO Mobile*/
   /*TODO Header*/
 
- .header {
-   border-bottom: 1px solid var(--cornflower-color);
-   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
- }
+.header {
+  border-bottom: 1px solid var(--cornflower-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
- .header-inner {
+.header-inner {
   display: flex;
   align-items: center;
 }
 
- .header-logo {
+.header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -87,54 +87,53 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-color);
-  padding: 24px 0;
- }
+}
 
- .header-logo-color {
+.header-logo-color {
   color: var(--navy-color);
- }
+}
 
- .header-list {
+.header-list {
   display: none;
- }
+}
 
- .address {
+.address {
   display: none;
-  }
+}
 
 
  /*TODO Hearo*/
-  .hero {
-   height: 432px;
-   margin: 0 auto;
-   background-color: var(--navy-color);
-   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+.hero {
+  height: 432px;
+  margin: 0 auto;
+  background-color: var(--navy-color);
+  background-image: linear-gradient(
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)
+  ),
     url("../images/mob.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-   padding-top: 112px;
-   padding-bottom: 112px;
-   text-align: center;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding-top: 112px;
+  padding-bottom: 112px;
+  text-align: center;
+}
 
-  @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-   .hero {
+  .hero {
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/mob-2x.jpg");
-    }
- }
+  }
+}
 
- .hero-inner {
+.hero-inner {
   display: block;
 }
 
@@ -216,8 +215,7 @@ img {
   background-color: var(--cloud-color);
   padding: 96px 0;
  
-  }
-
+}
 
 .team-title {
   font-size: 36px;
@@ -273,9 +271,11 @@ img {
   justify-content: center;
   transition: background-color var(--tra-dur-and-func);
 }
+
 .team-icon {
   fill: var(--cloud-color);
 }
+
 .team-icon-link:hover,
 .team-icon-link:focus {
   background-color: var(--ocean-color);
@@ -297,11 +297,11 @@ img {
 
 .customers-icon-list {
   display: flex;
-  }
+}
 
-  .customers-icon-item {
-    height: 88px;
-  }
+.customers-icon-item {
+  height: 88px;
+}
 
 .customers-icon-link {
   width: 100%;
@@ -522,6 +522,7 @@ img {
 .footer-input::placeholder {
   color: var(--white-color);
 }
+
 .footer-btn {
   min-width: 165px;
   height: 40px;
@@ -668,6 +669,7 @@ img {
   transform: translateY(-50%);
   transition: fill var(--tra-dur-and-func);
 }
+
 .modal-field-comment {
   margin-bottom: 16px;
 }
@@ -756,60 +758,60 @@ img {
 
 /*TODO Mobil media*/
 @media screen and (max-width: 767px) {
-   .container {
-    max-width: 426px;    
-   }
+ .container {
+  max-width: 426px;    
+ }
 
-   .header-inner {
-     justify-content: space-between;
-     }
+ .header-inner {
+  justify-content: space-between;
+ }
 
-     .header-nav {
-      padding-top: 24px;
-      padding-bottom: 22px;
-    }
+  .header-nav {
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
 
-     .hero-title {
-      font-size: 36px;
-      line-height: 1.11;
-      text-transform: capitalize;
-      max-width: 320px;
-      color: var(--white-color);
-      margin: auto;
-      margin-bottom: 72px;
-    }
+  .hero-title {
+   font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    max-width: 320px;
+    color: var(--white-color);
+    margin: auto;
+    margin-bottom: 72px;
+  }
 
-     .feature-icon-box {
-      display: none;
-    }
+  .feature-icon-box {
+    display: none;
+  }
   
-     .feature-item:not(:last-child)  {
-      margin-bottom: 72px;
-    }
+  .feature-item:not(:last-child)  {
+    margin-bottom: 72px;
+  }
   
-    .feature-item-title {
-      text-transform: capitalize;
-      text-align: center;
-    }
+  .feature-item-title {
+    text-transform: capitalize;
+    text-align: center;
+  }
   
-    .feature-text {
-      font-weight: 500;
-    }
+  .feature-text {
+    font-weight: 500;
+  }
   
-    .doing {
-      display: none;
-    }
+  .doing {
+    display: none;
+  }
 
-    .team-inner {
-      max-width: 294px;
-    }
+  .team-inner {
+    max-width: 294px;
+  }
 
-    .team-item:not(:last-child)  {
-      margin-bottom: 72px;
-    }
+  .team-item:not(:last-child)  {
+    margin-bottom: 72px;
+  }
 
   .customers-icon-list {
-      column-gap: 16px;
+    column-gap: 16px;
   }
 
   .customers-icon-item {
@@ -844,9 +846,9 @@ img {
   
    /*TODO Burger*/
 
-   .burger-btn {
-  border: none;
-  background-color: transparent;
+  .burger-btn {
+   border: none;
+   background-color: transparent;
   }
 
   .burger-svg {
@@ -971,29 +973,29 @@ img {
 @media screen and (max-width: 427px) {
   .mob-menu-tel-link {
     font-size: 25px;    
-    }
+  }
 
-    .mob-soc-list {
+  .mob-soc-list {
     gap: calc((100% - 168px) / 4);
-    }
+  }
 
-    .modal {
-      width: calc(100% - 30px);
-    }
+  .modal {
+    width: calc(100% - 30px);
+  }
 
-   }
+}
 
 @media screen and (min-width: 428px) {
   .mob-menu-tel-link {
     font-size: 36px; 
-    }
+  }
 }
 
 @media screen and (max-width: 1157px) {
   .customers-icon-list {
     flex-wrap: wrap;
     row-gap: 72px;
-    }
+  }
     
 }
 
@@ -1003,30 +1005,31 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
-     }
+  }
 
   .header-nav {
     display: flex;
     align-items: center;
-    }
+  }
 
   .header-logo {
-    margin-right: 76px;
+    margin-right: 120px;
   }
 
   .header-list {
     display: flex;
     align-items: center;
     gap: 40px;
-    }
+  }
 
   .header-link {
+    display: block;
     font-weight: 500;
     color: var(--navy-color);
     position: relative;
     padding: 24px 0;
     transition: color var(--tra-dur-and-func);
-    }
+  }
 
   .header-link::after {
     content: "";
@@ -1040,7 +1043,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     transition: transform var(--tra-dur-and-func), color var(--tra-dur-and-func);
-    }
+  }
 
   .header-link:hover:after,
   .header-link:focus:after,
@@ -1062,8 +1065,9 @@ img {
   .address {
     display: block; 
   }
-  
+
   .address-link {
+    display: block;
     font-weight: 400;
     color: var(--slate-color);
     transition: color var(--tra-dur-and-func);
@@ -1076,11 +1080,11 @@ img {
 
   .burger-btn {
     display: none;
- }
+  }
 
  .mob-menu {
   display: none;
- }
+  }
 
  .hero {
    height: 436px;
@@ -1089,35 +1093,35 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/tabl.jpg");
-    }
+  }
 
-     @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx) {
-     .hero {
-       background-image: linear-gradient(
+      .hero {
+        background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/tabl-2x.jpg");
-    }
+       ),
+       url("../images/tabl-2x.jpg");
+     }
   } 
 
-    .hero-title {
-      font-size: 56px;
-      line-height: 1.07;
-      max-width: 496px;
-      color: var(--white-color);
-      margin: auto;
-      margin-bottom: 36px;
-    }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    color: var(--white-color);
+    margin: auto;
+    margin-bottom: 36px;
+  }
 
   .customers-icon-list {
-      column-gap: 24px;
+    column-gap: 24px;
   }
 
   .customers-icon-item {
-      width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 
   .footer-inner {
@@ -1145,8 +1149,8 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
-
-  .header-tablet-address:not(:last-child) {
+ 
+  .header-tablet-address:first-child {
     margin-bottom: 12px;
   }
 
@@ -1158,7 +1162,7 @@ img {
 
   .feature-item {
     width: calc((100% - 24px) / 2);
-    }
+  }
 
   
   .feature-icon-box {
@@ -1167,56 +1171,61 @@ img {
 
   .feature-item-title {
     text-transform: capitalize;
-    }
+  }
 
-    .feature-text {
+  .feature-text {
       font-weight: 500;
-    }
+  }
 
-    .doing {
+  .doing {
       display: none;
-    }
+  }
 
-    .team-inner {
+  .team-inner {
       max-width: 582px;
-    }
+  }
 
-    .team-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 64px 24px;
-    }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
 
-    .team-item {
-      width: calc((100% - 24px) / 2);
-    }
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
 
-    .customers-inner {
-      max-width: 582px;
-    }
+  .customers-inner {
+    max-width: 582px;
+  }
 
-    .footer-inner {
-      max-width: 582px;
-      flex-wrap: wrap;
-    }
+  .footer-inner {
+    max-width: 582px;
+    flex-wrap: wrap;
+  }
 
-    .footer-container-logo {
-      margin-right: 24px;
-    }
+  .footer-container-logo {
+    margin-right: 24px;
+  }
 
-    .footer-container-form {
-      margin-top: 72px;
-    }
+  .footer-container-form {
+    margin-top: 72px;
+  }
 
 }
 
 
 
 /*TODO Desktop media*/
- @media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
 
   .address {
     display: flex;
@@ -1239,21 +1248,21 @@ img {
       url("../images/office.jpg");
     padding-top: 188px;
     padding-bottom: 188px;
-    }
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .hero {
+        .hero {
         background-image: linear-gradient(
          rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)
-       ),
-       url("../images/people-2x.jpg");
-     }
-   } 
+        ),
+        url("../images/people-2x.jpg");
+      }
+  } 
 
-   .hero-title {
+  .hero-title {
     margin-bottom: 48px;
   }
 
